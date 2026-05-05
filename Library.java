@@ -87,6 +87,17 @@ public class Library{
     }
     System.out.println("Book not found!");
 }
+
+
+public void displayAllBooks(){
+    for(Book book : books){
+        book.displayDetails();
+    }
+}
+
+
+
+
     
 }
 
