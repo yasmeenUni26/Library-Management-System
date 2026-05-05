@@ -65,7 +65,8 @@ public class Library{
          // If the book was not found pr wasn't borrowed, display a message.
          System.out.println("This book wasn't borrowed from the Library!");
      }
-    public void deleteBook(String title){
+    public void deleteBook(String title)
+    {
     for(int i = 0; i < books.size(); i++){
         if(books.get(i).getTitle().equalsIgnoreCase(title)){
             books.remove(i);
@@ -75,6 +76,18 @@ public class Library{
     }
     System.out.println("Book not found!  ");
 }
+
+    public void searchBook(String title){
+    for(Book book : books){
+        if(book.getTitle().equalsIgnoreCase(title)){
+            book.displayDetails();
+            return;
+        }
+    }
+    System.out.println("Book not found!");
+}
+
+    
 }
 
     
