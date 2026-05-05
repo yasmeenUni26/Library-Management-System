@@ -5,7 +5,7 @@ public class LibraryManagementSystem {
     public static void main(String[] args){
         // Create a scanner object for user input.
         Scanner scanner = new Scanner(System.in);
-        System.out.println("\n====== Library System ======");
+        System.out.println("\n====== Library BRANCH 1 VERSION======");
         System.out.println("1. Add Book");
        System.out.println("2. Delete Book");
        System.out.println("3. Search Book");
