@@ -5,7 +5,19 @@ public class LibraryManagementSystem {
     public static void main(String[] args){
         // Create a scanner object for user input.
         Scanner scanner = new Scanner(System.in);
+        System.out.println("\n====== Library System ======");
+        System.out.println("1. Add Book");
+       System.out.println("2. Delete Book");
+       System.out.println("3. Search Book");
+       System.out.println("4. Display All Books");
+       System.out.println("5. Borrow Book");
+       System.out.println("6. Return Book");
+       System.out.println("7. Update Book");
+       System.out.println("8. Exit");
+       System.out.print("Choose option: ");
 
+
+        
         // Create a Library object to manage the collection of the books. 
         Library library = new Library();
 
