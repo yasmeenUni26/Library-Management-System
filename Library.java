@@ -71,7 +71,18 @@ public class Library{
         book.displayDetails();
     }
 }
-    
+    public void updateBook(String oldTitle, String newTitle){
+    for(Book book : books){
+        if(book.getTitle().equalsIgnoreCase(oldTitle)){
+            // مش هينفع نغير مباشرة → نعمل كتاب جديد
+            books.remove(book);
+            books.add(new Book(newTitle, book.getAuthor()));
+            System.out.println("Book updated!");
+            return;
+        }
+    }
+    System.out.println("Book not found!");
+}
 }
 
     
