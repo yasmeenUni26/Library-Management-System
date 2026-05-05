@@ -65,29 +65,24 @@ public class Library{
          // If the book was not found pr wasn't borrowed, display a message.
          System.out.println("This book wasn't borrowed from the Library!");
      }
-    public void deleteBook(String title)
+    public void displayAllBooks()
     {
-    for(int i = 0; i < books.size(); i++){
-        if(books.get(i).getTitle().equalsIgnoreCase(title)){
-            books.remove(i);
-            System.out.println("Book deleted successfully!");
-            return;
-        }
-    }
-    System.out.println("Book not found!  ");
-}
-
-    public void searchBook(String title){
     for(Book book : books){
-        if(book.getTitle().equalsIgnoreCase(title)){
-            book.displayDetails();
+        book.displayDetails();
+    }
+}
+    public void updateBook(String oldTitle, String newTitle){
+    for(Book book : books){
+        if(book.getTitle().equalsIgnoreCase(oldTitle)){
+            // مش هينفع نغير مباشرة → نعمل كتاب جديد
+            books.remove(book);
+            books.add(new Book(newTitle, book.getAuthor()));
+            System.out.println("Book updated!");
             return;
         }
     }
     System.out.println("Book not found!");
 }
-
-    
 }
 
     
