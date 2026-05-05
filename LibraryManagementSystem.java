@@ -3,8 +3,7 @@ import java.util.Scanner;
 
 public class LibraryManagementSystem {
     public static void main(String[] args){
-        System.out.println("Library BRANCH 1 VERSION");
-        // Create a scanner object for user input.
+        System.out.println("Library BRANCH 2 VERSION");
         Scanner scanner = new Scanner(System.in);
         System.out.println("\n====== Library BRANCH 1 VERSION======");
         System.out.println("1. Add Book");
