@@ -71,6 +71,10 @@ public class Library{
         book.displayDetails();
     }
 }
+
+
+
+
     public void updateBook(String oldTitle, String newTitle){
     for(Book book : books){
         if(book.getTitle().equalsIgnoreCase(oldTitle)){
@@ -83,6 +87,7 @@ public class Library{
     }
     System.out.println("Book not found!");
 }
+    
 }
 
     
