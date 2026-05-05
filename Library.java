@@ -65,6 +65,12 @@ public class Library{
          // If the book was not found pr wasn't borrowed, display a message.
          System.out.println("This book wasn't borrowed from the Library!");
      }
+    public void displayAllBooks()
+    {
+    for(Book book : books){
+        book.displayDetails();
+    }
+}
     
 }
 
