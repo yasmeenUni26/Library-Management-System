@@ -50,9 +50,21 @@ public class LibraryManagementSystem {
                     // Exit condition
                     System.out.println("Exiting the system. Goodbye!");
                     break;
-            } // Handle inavlid input from the user. 
+            } 
+            else if(action.equalsIgnoreCase("add")){
+                System.out.print("Enter book title: ");
+                String title = scanner.nextLine();
+
+               System.out.print("Enter author: ");
+               String author = scanner.nextLine();
+
+              library.addBook(new Book(title, author));
+              System.out.println("Book added successfully!");
+}
+                 
+            // Handle inavlid input from the user. 
              else {
-                System.out.println("Invalid option. Please enter 'borrow', 'return', or 'exit'.");
+                System.out.println("Type 'add', 'borrow', 'return', or 'exit'.");
         }
 
     } // Close the scanner to prevent resource leaks.
